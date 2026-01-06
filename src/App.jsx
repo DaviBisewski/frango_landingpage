@@ -1,10 +1,10 @@
-import WhatsAppButton from './components/ui/WhatsappButton'
-import Home from './pages/Home'
+import RedzapButton from './components/ui/RedzapButton';
+import WhatsAppButton from './components/ui/WhatsappButton';
 
 function App() {
   return (
     <>
-      <Home />
+      <RedzapButton />
       <WhatsAppButton />
     </>
   );
