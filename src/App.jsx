@@ -4,8 +4,10 @@ import WhatsAppButton from './components/ui/WhatsappButton';
 function App() {
   return (
     <>
+    <main className='container'>
       <RedzapButton />
       <WhatsAppButton />
+    </main>
     </>
   );
 }

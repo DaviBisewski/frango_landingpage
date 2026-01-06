@@ -18,6 +18,12 @@ body {
     #040F09 0%,
     #1A4B30 100%
   );
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
 }
 
 

@@ -1,16 +1,16 @@
-.whatsapp-fab {
+.redzap-fab {
   display: inline-flex;
   align-items: center;
   gap: 14px;
 
-  padding: 14px 28px;
+  padding: 20px ;
   border-radius: 999px;
 
   background-color: #e50914;
   color: #ffffff;
 
-  font-family: var(--font-body);
-  font-size: 16px;
+  font-family: var(--font-tittle);
+  font-size: 22px;
   font-weight: 600;
   text-decoration: none;
 
@@ -19,18 +19,18 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.whatsapp-fab:hover {
+.redzap-fab:hover {
   transform: translateY(-2px);
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.45);
 }
 
-.whatsapp-fab_icon {
-  width: 22px;
-  height: 22px;
+.redzap-fab_icon {
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 
-.whatsapp-fab_text {
+.redzap-fab_text {
   line-height: 1.2;
 }
 
@@ -40,13 +40,13 @@
 
 /* Tablets e telas médias */
 @media (max-width: 1024px) {
-  .whatsapp-fab {
+  .redzap-fab {
     font-size: 15px;
     padding: 13px 24px;
     gap: 12px;
   }
 
-  .whatsapp-fab_icon {
+  .redzap-fab_icon {
     width: 20px;
     height: 20px;
   }
@@ -54,7 +54,7 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-  .whatsapp-cta {
+  .redzap-fab {
     width: 100%;
     justify-content: center;
 
@@ -62,7 +62,7 @@
     padding: 16px 20px;
   }
 
-  .whatsapp-cta__icon {
+  .redzap-fab_icon {
     width: 20px;
     height: 20px;
   }
@@ -70,12 +70,12 @@
 
 /* Mobile pequeno */
 @media (max-width: 480px) {
-  .whatsapp-cta {
+  .redzap-fab {
     font-size: 14px;
     padding: 14px 18px;
   }
 
-  .whatsapp-cta__icon {
+  .redzap-fab_icon {
     width: 18px;
     height: 18px;
   }
