@@ -1,0 +1,156 @@
+.countdown {
+  margin-top: 24px;
+  padding: 24px 32px;
+  border-radius: 24px;
+
+  text-align: center;
+  font-weight: 700;
+}
+
+/* ABERTO */
+.countdown.aberto {
+  background: rgba(31, 94, 59, 0.85);
+  color: #ffffff;
+}
+
+.countdown.aberto .countdown-title {
+  font-size: 22px;
+}
+
+.countdown.aberto .countdown-sub {
+  display: block;
+  margin-top: 6px;
+  font-size: 16px;
+  color: #f4a41d;
+}
+
+/* FECHADO */
+.countdown.fechado {
+  background: rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+}
+
+.countdown-title {
+  font-size: 20px;
+}
+
+.countdown-time {
+  display: block;
+  margin-top: 8px;
+
+  font-size: 28px;
+  color: #f4a41d;
+}
+
+.countdown-wrapper {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.countdown-label {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* CARDS */
+.countdown-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.time-card {
+  width: 120px;
+  height: 110px;
+
+  background: linear-gradient(
+    180deg,
+    #2f7a52,
+    #1f5e3b
+  );
+
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  transition: transform 0.4s ease;
+}
+
+/* ANIMAÇÃO */
+.time-card.flip {
+  animation: flip 0.5s ease;
+}
+
+@keyframes flip {
+  0% {
+    transform: translateY(10px) scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.time-value {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.time-label {
+  font-size: 14px;
+  color: #f4a41d;
+  margin-top: 4px;
+}
+
+/* DIVISOR */
+.divider {
+  font-size: 32px;
+  font-weight: 700;
+  color: #f4a41d;
+}
+
+/* ABERTO */
+.countdown-open {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 20px;
+
+  background: rgba(31, 94, 59, 0.85);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .time-card {
+    width: 90px;
+    height: 90px;
+  }
+
+  .time-value {
+    font-size: 30px;
+  }
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .countdown {
+    padding: 20px;
+  }
+
+  .countdown-time {
+    font-size: 22px;
+  }
+}

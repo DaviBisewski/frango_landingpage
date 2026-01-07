@@ -1,0 +1,30 @@
+.status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 24px;
+  border-radius: 999px;
+
+  font-weight: 700;
+  font-size: 20px;
+  font-family: var(--font-tittle);
+
+  background: #ffffff;
+}
+
+/* ABERTO */
+.status.aberto {
+  color: #1e7f3b;
+}
+
+/* FECHADO */
+.status.fechado {
+  color: #e02020;
+}
+
+.status-icon {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}

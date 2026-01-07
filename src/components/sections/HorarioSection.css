@@ -1,0 +1,67 @@
+
+/* HEADER */
+.horario-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.horario-section {
+margin-top: -100px;
+}
+
+/* CARD */
+.horario-card {
+  background: #1f5e3b;
+  border-radius: 40px;
+  padding: 50px;
+  text-align: center;
+}
+
+.horario-card h3 {
+  color: #ffffff;
+  font-size: 64px;
+  margin-bottom: 20px;
+  font-family: var(--font-tittle);
+}
+
+.horario-hora {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.horario-observacao {
+  color: #f4a41d;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--font-tittle);
+  
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .horario-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .horario-title h2 {
+    font-size: 28px;
+  }
+
+  .horario-card {
+    padding: 32px 20px;
+  }
+
+  .horario-card h3 {
+    font-size: 28px;
+  }
+
+  .horario-hora {
+    font-size: 22px;
+  }
+}
