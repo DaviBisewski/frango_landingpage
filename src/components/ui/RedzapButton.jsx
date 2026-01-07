@@ -1,7 +1,7 @@
 import "./RedzapButton.css";
 import iconzap from "../../icons/whatsapp.png";
 
-export default function RedzapButton() {
+export default function RedzapButton({text}) {
   const phoneNumber = "5547984828184";
   const message = "Olá! Gostaria de fazer um pedido.";
 
@@ -17,7 +17,7 @@ export default function RedzapButton() {
       className="redzap-fab"
     >
         <span className="redzap-icon_text">
-            Encomendar agora no Whatsapp
+            {text}
         </span>
 
         <img src={iconzap} alt="Ícone do WhatsApp" className="redzap-icon" aria-hidden="true" />

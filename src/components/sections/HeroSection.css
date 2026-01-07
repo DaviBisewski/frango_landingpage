@@ -1,0 +1,168 @@
+.hero {
+  width: 100%;
+  padding: 80px 20px;
+}
+
+.hero-container {
+  margin: 0 auto;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.hero-badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.trinta {
+  background-color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-badge span {
+  font-size: 32px;
+  font-family: var(--font-tittle);
+  color: white;
+}
+
+.hero-badge strong {
+  color: #e30613;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  line-height: 1.4;
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: white;
+}
+
+.hero-content h1 strong {
+  color: #ffffff;
+  font-family: var(--font-tittle);
+}
+
+.frango-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin-top: 100px;
+}
+
+.frango-shadow {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 70%;
+  height: 35px;
+
+  background: rgba(0, 0, 0, 0.8);
+  filter: blur(18px);
+  border-radius: 50%;
+
+  animation: shadowPulse 4s ease-in-out infinite;
+}
+
+.frango-img {
+  position: relative;
+  width: 100%;
+  width: 766px;
+  height: 510px;
+  animation: floatFrango 4s ease-in-out infinite;
+}
+
+@keyframes floatFrango {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shadowPulse {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateX(-50%) scale(0.85);
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.45;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+  .frango-wrapper {
+    width: 100%;
+    max-width: 320px;
+
+    margin-top: 20px;
+  }
+
+  .frango-img {
+    animation: floatFrangoMobile 4s ease-in-out infinite;
+    height: 300px;
+    width: 400px;
+    align-self: center;
+  }
+
+  @keyframes floatFrangoMobile {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+@keyframes floatFrangoMobile {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

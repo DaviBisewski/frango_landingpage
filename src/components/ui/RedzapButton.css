@@ -3,14 +3,14 @@
   align-items: center;
   gap: 14px;
 
-  padding: 20px ;
+  padding: 8px 13px;
   border-radius: 999px;
 
   background-color: #e50914;
   color: #ffffff;
 
   font-family: var(--font-tittle);
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 600;
   text-decoration: none;
 
@@ -68,15 +68,20 @@
   }
 }
 
-/* Mobile pequeno */
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .redzap-fab {
-    font-size: 14px;
-    padding: 14px 18px;
+    width: 100%;
+    max-width: 100%;
+
+    border-radius: 40px;
+    padding: 5px;
+
+    justify-content: center;
   }
 
-  .redzap-fab_icon {
-    width: 18px;
-    height: 18px;
+  .redzap-icon_text {
+    flex: 1;
+    text-align: center;
   }
 }
+
