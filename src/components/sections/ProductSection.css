@@ -1,0 +1,10 @@
+.products-section {
+  padding: 120px 20px;
+  
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}

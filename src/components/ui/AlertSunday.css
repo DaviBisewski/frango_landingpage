@@ -1,0 +1,42 @@
+.alert-sunday {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  margin: 80px 0;
+  background: #f4a41d;
+  border-radius: 28px;
+  padding: 30px 40px;
+
+  max-width: 100%;
+}
+
+
+
+
+
+.alert-icon-image {
+  width: 130px;
+  height: 130px;
+  margin-left: 50px;
+}
+
+
+/* Texto */
+.alert-text {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+  font-family: var(--font-tittle);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .alert-text {
+    font-size: 20px;
+  }
+
+  .alert-sunday {
+    padding: 16px 20px;
+  }
+}

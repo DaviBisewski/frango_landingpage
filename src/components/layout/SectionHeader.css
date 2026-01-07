@@ -1,0 +1,22 @@
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section-title img {
+  width: 70px;
+}
+
+.section-title h2 {
+  font-size: 50px;
+  font-family: var(--font-tittle);
+  color: white;
+}
