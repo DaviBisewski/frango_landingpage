@@ -3,16 +3,18 @@ import WhatsAppButton from './components/ui/WhatsappButton';
 import InfoBar from './components/layout/InfoBar';
 import ProductSection from './components/sections/ProductSection';
 import HorarioSection from './components/sections/HorarioSection';
+import LocationSection from './components/sections/LocationSection';
 
 function App() {
   return (
     <>
     <main >
-      <HeroSection />
-      <InfoBar />
+      <HeroSection/>
+      <InfoBar/>
       <ProductSection/>
       <HorarioSection/>
-      <WhatsAppButton />
+      <LocationSection/>
+      <WhatsAppButton/>
     </main>
     </>
   );

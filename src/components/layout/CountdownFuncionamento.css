@@ -26,7 +26,7 @@
 
 /* FECHADO */
 .countdown.fechado {
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(17, 17, 17, 0.35);
   color: #ffffff;
 }
 
@@ -37,7 +37,7 @@
 .countdown-time {
   display: block;
   margin-top: 8px;
-
+  font-family: var(--font-tittle);
   font-size: 28px;
   color: #f4a41d;
 }
@@ -55,40 +55,8 @@
   color: #ffffff;
 }
 
-/* CARDS */
-.countdown-cards {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
 
-.time-card {
-  width: 120px;
-  height: 110px;
 
-  background: linear-gradient(
-    180deg,
-    #2f7a52,
-    #1f5e3b
-  );
-
-  border-radius: 18px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  color: #ffffff;
-  transition: transform 0.4s ease;
-}
-
-/* ANIMAÇÃO */
-.time-card.flip {
-  animation: flip 0.5s ease;
-}
 
 @keyframes flip {
   0% {

@@ -1,0 +1,27 @@
+.open-maps-button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  background: #ffffff;
+  color: #1f5136;
+
+  padding: 14px 28px;
+  border-radius: 999px;
+
+  font-weight: 600;
+  font-size: 16px;
+
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.open-maps-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.open-maps-icon {
+  width: 22px;
+  height: 22px;
+}

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 50px;
 }
 
 .section-title {
@@ -12,7 +12,7 @@
 }
 
 .section-title img {
-  width: 70px;
+  width: 65px;
 }
 
 .section-title h2 {
