@@ -5,8 +5,8 @@ import StoreIcon from '../../icons/casa.png'
 import SectionHeader from '../layout/SectionHeader'
 import LocalIcon from '../../icons/localamarelo.png'
 
-// botão de whatsapp que você já tem
-import RedzapButton from '../ui/RedzapButton'
+import UberFlashSlider from '../layout/UberFlashSlider';
+
 
 export default function LocationSection() {
   return (
@@ -19,7 +19,6 @@ export default function LocationSection() {
         />
     </div>
       <div className="location-content">
-        {/* MAPA */}
         <div className="map-container">
           <iframe
             title="Mapa La Casa Di Frango"
@@ -32,24 +31,23 @@ export default function LocationSection() {
         {/* INFO */}
         <div className="location-info">
           <p className="address">
-            Rua Santa Catarina, 683<br />
-            Floresta – <span>Joinville – SC</span>
+            Rua Santa Catarina, 683 - 
+            Floresta <span>Joinville – SC</span>
           </p>
 
           <div className="info-item">
             <img src={PhoneIcon} alt="" />
             <div>
-              <strong>Telefone</strong>
               <span>(47) 93426-1024</span>
             </div>
           </div>
 
           <div className="info-item">
             <img src={StoreIcon} alt="" />
-            <strong>Retire no local</strong>
+            <strong>Retire seu pedido no local</strong>
           </div>
-
-          <RedzapButton text={"Faça sua encomenda"}/>
+          <UberFlashSlider />
+          
         </div>
       </div>
     </section>

@@ -97,7 +97,7 @@ export default function CountdownFuncionamento() {
 
   return (
     <div className="countdown fechado">
-      <span className="countdown-title">Abrimos em</span>
+      <span className="countdown-title">Estaremos prontos para te receber em</span>
 
       <span className="countdown-time">
         {horas}h {minutos}min

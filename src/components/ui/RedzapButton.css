@@ -1,5 +1,5 @@
 .redzap-fab {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 14px;
 
