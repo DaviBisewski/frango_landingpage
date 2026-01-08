@@ -2,26 +2,28 @@
   margin-top: 24px;
   padding: 24px 32px;
   border-radius: 24px;
-
   text-align: center;
   font-weight: 700;
 }
 
 /* ABERTO */
 .countdown.aberto {
-  background: rgba(31, 94, 59, 0.85);
-  color: #ffffff;
+  background: rgba(19, 58, 36, 0.85);
+  color: #fff;
+  animation: pulse-green 1.8s infinite;
 }
 
 .countdown.aberto .countdown-title {
-  font-size: 30px;
+  font-size: 48px;
+  font-family: var(--font-tittle);
 }
 
 .countdown.aberto .countdown-sub {
   display: block;
   margin-top: 6px;
-  font-size: 16px;
+  font-size: 22px;
   color: #f4a41d;
+  font-family: var(--font-tittle);
 }
 
 /* FECHADO */
@@ -31,94 +33,39 @@
 }
 
 .countdown-title {
-  font-size: 20px;
+  font-size: 44px;
+  font-family: var(--font-tittle);
 }
 
 .countdown-time {
   display: block;
   margin-top: 8px;
+  font-size: 26px;
+  color: #f4a41d;
   font-family: var(--font-tittle);
-  font-size: 28px;
-  color: #f4a41d;
 }
 
-.countdown-wrapper {
-  margin-top: 32px;
-  text-align: center;
-}
-
-.countdown-label {
-  display: block;
-  margin-bottom: 16px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-
-
-
-@keyframes flip {
-  0% {
-    transform: translateY(10px) scale(0.95);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
-}
-
-.time-value {
-  font-size: 40px;
-  font-weight: 800;
-}
-
-.time-label {
-  font-size: 14px;
-  color: #f4a41d;
-  margin-top: 4px;
-}
-
-/* DIVISOR */
-.divider {
-  font-size: 32px;
-  font-weight: 700;
-  color: #f4a41d;
-}
-
-/* ABERTO */
-.countdown-open {
-  margin-top: 24px;
-  padding: 20px;
-  border-radius: 20px;
-
-  background: rgba(31, 94, 59, 0.85);
-  color: #ffffff;
-  font-size: 22px;
-  font-weight: 800;
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-  .time-card {
-    width: 90px;
-    height: 90px;
-  }
-
-  .time-value {
-    font-size: 30px;
-  }
-}
-
-
-/* RESPONSIVO */
+/* MOBILE */
 @media (max-width: 768px) {
   .countdown {
     padding: 20px;
   }
 
-  .countdown-time {
-    font-size: 22px;
+  .countdown-title {
+    font-size: 28px;
   }
+
+  .countdown-time {
+    font-size: 20px;
+  }
+
+  .countdown.aberto .countdown-title {
+    font-size: 30px;
+  }
+}
+
+@keyframes pulse-green {
+  0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.6); }
+  70% { box-shadow: 0 0 0 18px rgba(34, 197, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
 }

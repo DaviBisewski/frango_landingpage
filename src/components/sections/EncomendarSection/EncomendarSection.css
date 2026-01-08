@@ -1,13 +1,13 @@
 .encomendar {
-  padding: 140px 24px;
+  padding: 120px 24px;
   display: flex;
   justify-content: center;
   font-family: var(--font-tittle);
 }
 
 .encomendar-container {
-  max-width: 1300px;
   width: 100%;
+  max-width: 720px; /* controle de leitura no mobile */
   text-align: center;
 
   display: flex;
@@ -16,27 +16,31 @@
   gap: 20px;
 }
 
+/* TÍTULO */
 .encomendar h2 {
-  font-size: 62px;
+  font-size: 56px;
   color: #fff;
   font-weight: 700;
-  opacity: 0;
- animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 
+  opacity: 0;
+  animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/* TEXTO */
 .encomendar p {
-  font-size: 36px;
+  font-size: 28px;
   color: rgba(255, 255, 255, 0.85);
-  max-width: 1300px;
+
   opacity: 0;
   animation: fadeUp 0.8s ease-out forwards;
+  animation-delay: 0.1s;
 }
 
+/* ANIMAÇÃO */
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(24px);
   }
 
   to {
@@ -45,4 +49,31 @@
   }
 }
 
+/* -------------------------
+   RESPONSIVO
+-------------------------- */
+@media (max-width: 768px) {
+  .encomendar {
+    padding: 80px 20px;
+  }
 
+  .encomendar h2 {
+    font-size: 38px;
+  }
+
+  .encomendar p {
+    font-size: 20px;
+  }
+}
+
+/* -------------------------
+   ACESSIBILIDADE
+-------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .encomendar h2,
+  .encomendar p {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

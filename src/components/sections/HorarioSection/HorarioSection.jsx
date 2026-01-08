@@ -3,26 +3,39 @@ import StatusFuncionamento from '../../ui/StatusFuncionamento/StatusFuncionament
 import SectionHeader from '../../layout/SectionHeader/SectionHeader'
 import CountdownFuncionamento from '../../layout/CountdownFuncionamento/CountdownFuncionamento'
 
-// IMPORTA SEU ÍCONE DE RELÓGIO
 import clockIcon from '../../../icons/relogio.png'
+import calendarIcon from '../../../icons/calendar.png'
 
 export default function HorarioSection() {
   return (
-      <div className='container'>
     <section className="horario-section">
+      <div className="horario-container">
         <div className="horario-header">
-    <SectionHeader icon={clockIcon} title="Horário de funcionamento" />
-    <StatusFuncionamento />
-    </div>
-      <div className="horario-card">
-        <h3>Quarta a domingo e feriados</h3>
-        <p className="horario-hora">Das 10:00 às 13:30</p>
-        <span className="horario-observacao">
-          Retirada de encomendas até 12:30
-        </span>
-           <CountdownFuncionamento />
+          <SectionHeader
+            icon={clockIcon}
+            title="Horário de funcionamento"
+          />
+          <StatusFuncionamento />
+        </div>
+
+        <div className="horario-card">
+          <CountdownFuncionamento />
+
+          <div className="horario-row">
+            <img src={calendarIcon} alt="" aria-hidden />
+            <h3>Quarta a domingo e feriados</h3>
+          </div>
+
+          <div className="horario-row">
+            <img src={clockIcon} alt="" aria-hidden />
+            <h3 className="horario-hora">Das 10:00 às 13:30</h3>
+          </div>
+
+          <span className="horario-observacao">
+            Retirada de encomendas até 12:30
+          </span>
+        </div>
       </div>
     </section>
-    </div>
   )
 }

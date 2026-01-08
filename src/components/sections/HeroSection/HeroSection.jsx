@@ -1,7 +1,6 @@
 import "./HeroSection.css";
 import logo from "../../../images/logo.png";
 import frango from "../../../images/frango.png";
-
 import RedzapButton from "../../ui/RedzapButton/RedzapButton";
 
 export default function HeroSection() {
@@ -12,21 +11,21 @@ export default function HeroSection() {
           <div className="hero-badge">
             <img src={logo} alt="La Casa Di Frango" />
             <span>
-              <strong className="trinta">30+</strong> anos de tradição
+              <strong>30+</strong> anos de tradição
             </span>
           </div>
 
           <h1>
-            <strong>Frango assado na hora, </strong>
-            com e sem <br />
-            recheio
+            <strong>Frango assado na hora,</strong>
+            <br />
+            com e sem recheio
           </h1>
 
           <RedzapButton text="Encomendar agora no WhatsApp" />
         </div>
 
         <div className="frango-wrapper">
-          <div className="frango-shadow"></div>
+          <span className="frango-shadow" />
           <img src={frango} alt="Frango assado" className="frango-img" />
         </div>
       </div>

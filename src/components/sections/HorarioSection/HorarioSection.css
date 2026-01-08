@@ -1,68 +1,106 @@
+.horario-section {
+  padding: 120px 16px;
+}
+
+.horario-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 
 /* HEADER */
 .horario-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
-}
-
-.horario-section {
-margin-top: -100px;
+  gap: 24px;
+  margin-bottom: 40px;
 }
 
 /* CARD */
 .horario-card {
   background: #1f5e3b;
-  border-radius: 40px;
-  padding: 50px;
-  text-align: center;
+  border-radius: 32px;
+  padding: 40px;
+}
+
+/* LINHAS */
+.horario-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.horario-row img {
+  width: 40px;
+  height: 40px;
 }
 
 .horario-card h3 {
-  color: #ffffff;
-  font-size: 64px;
-  margin-bottom: 20px;
+  color: #fff;
+  font-size: 34px;
   font-family: var(--font-tittle);
+  margin: 0;
 }
 
 .horario-hora {
-  color: #ffffff;
-  font-size: 50px;
-  font-weight: 300;
-  margin-bottom: 12px;
-  
+  font-size: 28px;
+  font-weight: 400;
 }
 
+/* OBS */
 .horario-observacao {
+  display: block;
+  margin-top: 20px;
   color: #f4a41d;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   font-family: var(--font-tittle);
-  
 }
 
-/* RESPONSIVO */
+/* -------------------------
+   MOBILE
+-------------------------- */
+
 @media (max-width: 768px) {
-  .horario-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+  .horario-section {
+    padding: 80px 16px;
   }
 
-  .horario-title h2 {
-    font-size: 28px;
+  .horario-container {
+    max-width: 420px;
+  }
+
+  .horario-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
   }
 
   .horario-card {
-    padding: 32px 20px;
+    padding: 28px 20px;
   }
 
   .horario-card h3 {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .horario-hora {
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  .horario-row {
+    gap: 12px;
+  }
+
+  .horario-row img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .horario-observacao {
+    font-size: 16px;
+    text-align: center;
   }
 }

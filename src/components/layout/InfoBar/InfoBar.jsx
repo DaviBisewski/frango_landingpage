@@ -7,22 +7,10 @@ import locationIcon from "../../../icons/local.png";
 
 export default function InfoBar() {
   const items = [
-    {
-      icon: phoneIcon,
-      text: "Faça sua encomenda",
-    },
-    {
-      icon: calendarIcon,
-      text: "Quarta a domingo e feriados",
-    },
-    {
-      icon: clockIcon,
-      text: "Retirada de encomendas das 9 às 13",
-    },
-    {
-      icon: locationIcon,
-      text: "R. Santa Catarina, 683",
-    },
+    { icon: phoneIcon, text: "Faça sua encomenda" },
+    { icon: calendarIcon, text: "Quarta a domingo e feriados" },
+    { icon: clockIcon, text: "Retirada das 9 às 13h" },
+    { icon: locationIcon, text: "R. Santa Catarina, 683" },
   ];
 
   return (
@@ -30,7 +18,7 @@ export default function InfoBar() {
       <div className="info-track">
         {[...items, ...items].map((item, index) => (
           <div className="info-item" key={index}>
-            <img src={item.icon} alt="" />
+            <img src={item.icon} alt="" aria-hidden />
             <span>{item.text}</span>
           </div>
         ))}

@@ -35,7 +35,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <a
-          href="https://github.com/seu-usuario"
+          href="https://github.com/DaviBisewski"
           target="_blank"
           className="footer-credit"
         >

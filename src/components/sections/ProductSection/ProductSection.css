@@ -1,10 +1,41 @@
 .products-section {
-  padding: 120px 20px;
-  
+  padding: 120px 16px;
 }
 
+.products-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* GRID */
 .products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
+}
+
+/* -------------------------
+   RESPONSIVO
+-------------------------- */
+
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-section {
+    padding: 80px 16px;
+  }
+
+  .products-container {
+    max-width: 420px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }

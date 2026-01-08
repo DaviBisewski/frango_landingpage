@@ -1,22 +1,27 @@
 .hero {
   width: 100%;
-  padding: 80px 20px;
+  padding: 80px 16px;
 }
 
 .hero-container {
-  margin: 0 auto;
   max-width: 1300px;
+  margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
+  gap: 48px;
 }
 
+/* -------------------------
+   CONTEÚDO
+-------------------------- */
+
 .hero-content {
-  max-width: 550px;
+  max-width: 560px;
   display: flex;
   flex-direction: column;
-  gap: 70px;
+  gap: 40px;
 }
 
 .hero-badge {
@@ -25,43 +30,58 @@
   gap: 14px;
 }
 
-.trinta {
-  background-color: white;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.hero-badge img {
+  width: 150px;
+  height: auto;
 }
 
 .hero-badge span {
-  font-size: 32px;
+  font-size: 28px;
   font-family: var(--font-tittle);
-  color: white;
+  color: #fff;
 }
 
 .hero-badge strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  margin-right: 6px;
+
+  border-radius: 50%;
+  background: #fff;
   color: #e30613;
+  font-weight: 700;
 }
 
 .hero-content h1 {
   font-size: 50px;
-  line-height: 1.4;
-  font-family: var(--font-body);
+  line-height: 1.3;
   font-weight: 400;
-  color: white;
+  color: #fff;
+  font-family: var(--font-body);
 }
 
 .hero-content h1 strong {
-  color: #ffffff;
   font-family: var(--font-tittle);
 }
 
+/* -------------------------
+   FRANGO
+-------------------------- */
+
 .frango-wrapper {
   position: relative;
+}
+
+.frango-img {
+  width: 760px;
   max-width: 100%;
-  margin-top: 100px;
+  height: auto;
+
+  animation: floatFrango 4s ease-in-out infinite;
 }
 
 .frango-shadow {
@@ -71,7 +91,7 @@
   transform: translateX(-50%);
 
   width: 70%;
-  height: 35px;
+  height: 36px;
 
   background: rgba(0, 0, 0, 0.8);
   filter: blur(18px);
@@ -80,89 +100,70 @@
   animation: shadowPulse 4s ease-in-out infinite;
 }
 
-.frango-img {
-  position: relative;
-  width: 100%;
-  width: 766px;
-  height: 510px;
-  animation: floatFrango 4s ease-in-out infinite;
-}
+/* -------------------------
+   ANIMAÇÕES
+-------------------------- */
 
 @keyframes floatFrango {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-18px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
 }
 
 @keyframes shadowPulse {
-  0% {
-    transform: translateX(-50%) scale(1);
-    opacity: 0.45;
-  }
-  50% {
-    transform: translateX(-50%) scale(0.85);
-    opacity: 0.25;
-  }
-  100% {
-    transform: translateX(-50%) scale(1);
-    opacity: 0.45;
-  }
+  0% { transform: translateX(-50%) scale(1); opacity: 0.45; }
+  50% { transform: translateX(-50%) scale(0.85); opacity: 0.25; }
+  100% { transform: translateX(-50%) scale(1); opacity: 0.45; }
 }
 
+/* -------------------------
+   MOBILE
+-------------------------- */
+
 @media (max-width: 768px) {
+  .hero {
+    padding: 64px 16px;
+  }
+
   .hero-container {
     flex-direction: column;
-    text-align: justify;
+    max-width: 420px;
+    text-align: center;
   }
 
   .hero-content {
     align-items: center;
+    gap: 40px;
+  }
+
+  .hero-badge span {
+    font-size: 22px;
+  }
+
+  .hero-badge strong {
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
   }
 
   .hero-content h1 {
-    font-size: 34px;
+    font-size: 32px;
+    line-height: 1.35;
   }
 
   .frango-wrapper {
-    width: 100%;
-    max-width: 320px;
-
-    margin-top: 20px;
+    margin-top: 12px;
   }
 
   .frango-img {
+    width: 100%;
+    max-width: 340px;
     animation: floatFrangoMobile 4s ease-in-out infinite;
-    height: 300px;
-    width: 400px;
-    align-self: center;
-  }
-
-  @keyframes floatFrangoMobile {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
   }
 }
+
 @keyframes floatFrangoMobile {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }

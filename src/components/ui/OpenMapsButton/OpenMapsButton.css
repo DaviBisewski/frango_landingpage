@@ -1,16 +1,16 @@
 .open-maps-button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 50px;
+
   background: #ffffff;
   color: #1f5136;
 
- 
   border-radius: 999px;
-  padding: 15px 30px;
+  padding: 14px 26px;
+
   font-family: var(--font-tittle);
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
 
   text-decoration: none;
@@ -23,6 +23,19 @@
 }
 
 .open-maps-icon {
-  width: 35px;
-  height: 45px;
+  width: 32px;
+  height: 32px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .open-maps-button {
+    font-size: 18px;
+    padding: 12px 22px;
+  }
+
+  .open-maps-icon {
+    width: 26px;
+    height: 26px;
+  }
 }
