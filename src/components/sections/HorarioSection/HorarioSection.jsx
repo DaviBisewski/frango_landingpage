@@ -1,10 +1,10 @@
 import './HorarioSection.css'
-import StatusFuncionamento from '../ui/StatusFuncionamento'
-import SectionHeader from '../layout/SectionHeader'
-import CountdownFuncionamento from '../layout/CountdownFuncionamento'
+import StatusFuncionamento from '../../ui/StatusFuncionamento/StatusFuncionamento'
+import SectionHeader from '../../layout/SectionHeader/SectionHeader'
+import CountdownFuncionamento from '../../layout/CountdownFuncionamento/CountdownFuncionamento'
 
 // IMPORTA SEU ÍCONE DE RELÓGIO
-import clockIcon from '../../icons/relogio.png'
+import clockIcon from '../../../icons/relogio.png'
 
 export default function HorarioSection() {
   return (

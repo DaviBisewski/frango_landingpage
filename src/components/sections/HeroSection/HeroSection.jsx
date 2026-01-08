@@ -1,8 +1,8 @@
 import "./HeroSection.css";
-import logo from "../../images/logo.png";
-import frango from "../../images/frango.png";
+import logo from "../../../images/logo.png";
+import frango from "../../../images/frango.png";
 
-import RedzapButton from "../ui/RedzapButton";
+import RedzapButton from "../../ui/RedzapButton/RedzapButton";
 
 export default function HeroSection() {
   return (

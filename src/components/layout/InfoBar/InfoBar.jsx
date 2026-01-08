@@ -1,9 +1,9 @@
 import "./InfoBar.css";
 
-import phoneIcon from "../../icons/telefone.png";
-import calendarIcon from "../../icons/calendario.png";
-import clockIcon from "../../icons/frangoicon.png";
-import locationIcon from "../../icons/local.png";
+import phoneIcon from "../../../icons/telefone.png";
+import calendarIcon from "../../../icons/calendario.png";
+import clockIcon from "../../../icons/frangoicon.png";
+import locationIcon from "../../../icons/local.png";
 
 export default function InfoBar() {
   const items = [

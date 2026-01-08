@@ -1,5 +1,5 @@
 import './AlertSunday.css'
-import atencaoicon from '../../icons/atenção.png'
+import atencaoicon from '../../../icons/atenção.png'
 
 export default function AlertSunday() {
   return (

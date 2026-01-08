@@ -1,5 +1,5 @@
 import './OpenMapsButton.css'
-import  googlemaps  from '../../icons/googlemaps.png' 
+import  googlemaps  from '../../../icons/googlemaps.png' 
 
 export default function OpenMapsButton({ href }) {
   return (

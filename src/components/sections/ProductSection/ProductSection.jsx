@@ -1,14 +1,14 @@
 import "./ProductSection.css";
 
-import SectionHeader from "../layout/SectionHeader";
-import ProductCard from "../ui/ProductCard";
-import RedzapButton from "../ui/RedzapButton";
-import AlertSunday from "../ui/AlertSunday";
+import SectionHeader from "../../layout/SectionHeader/SectionHeader";
+import ProductCard from "../../ui/ProductCard/ProductCard";
+import RedzapButton from "../../ui/RedzapButton/RedzapButton";
+import AlertSunday from "../../ui/AlertSunday/AlertSunday";
 
-import iconFrango from "../../icons/frangoamarelo.png";
-import frangoImg from "../../images/frango.png";
-import bebidasImg from "../../images/bebidas.png";
-import adicionaisImg from "../../images/adicionais.png";
+import iconFrango from "../../../icons/frangoamarelo.png";
+import frangoImg from "../../../images/frango.png";
+import bebidasImg from "../../../images/bebidas.png";
+import adicionaisImg from "../../../images/adicionais.png";
 
 export default function ProductsSection() {
   return (

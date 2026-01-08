@@ -1,6 +1,6 @@
 import './StatusFuncionamento.css'
-import portaverde from '../../icons/portaverde.png'
-import portavermeio from '../../icons/portavermeio.png'
+import portaverde from '../../../icons/portaverde.png'
+import portavermeio from '../../../icons/portavermeio.png'
 
 // Lista básica de feriados nacionais fixos (pode expandir depois)
 const feriadosFixos = [

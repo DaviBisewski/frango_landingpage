@@ -1,0 +1,244 @@
+/* ======================
+   BOTÃO PRINCIPAL
+====================== */
+.uberflash-btn {
+  width: 100%;
+  max-width: 480px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  padding: 20px;
+  border-radius: 999px;
+
+  background: #e50914;
+  color: #fff;
+
+  border: none;
+  cursor: pointer;
+
+  font-family: var(--font-tittle);
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 40px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.uberflash-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+.uberflash-btn-icon {
+  width: 50px;
+}
+
+/* ======================
+   OVERLAY
+====================== */
+.uberflash-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* ======================
+   MODAL
+====================== */
+.uberflash-modal {
+  width: 100%;
+  max-width: 560px;
+
+  background: #ffffff; /* tom claro alinhado ao site */
+  border-radius: 26px 26px 0 0;
+
+  padding: 32px 26px 26px;
+  position: relative;
+  color: #1F5C3A;
+  animation: slideUp 0.35s ease;
+  font-family: var(--font-tittle);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+
+.uberflash-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ======================
+   ÍCONE ANIMADO
+====================== */
+.uberflash-icon-track {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+
+
+.uberflash-modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 64px;
+
+  transform: translateY(-50%) rotate(2deg);
+  animation: motoRun 9s ease-in-out infinite;
+
+  z-index: 3;
+}
+
+
+.uberflash-modal-icon::before,
+.uberflash-modal-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -18px;
+
+  width: 16px;
+  height: 16px;
+
+  background: rgba(0, 0, 0, 0.18);
+  border-radius: 50%;
+  filter: blur(8px);
+
+  transform: translateY(-50%);
+  opacity: 0;
+
+  animation: smoke 1.6s ease-out infinite;
+}
+
+/* Partícula menor, atrasada */
+.uberflash-modal-icon::after {
+  width: 10px;
+  height: 10px;
+  left: -28px;
+  opacity: 0.35;
+  animation-delay: 0.4s;
+}
+
+
+
+
+
+@keyframes motoRun {
+  0% {
+    transform: translate(-90px, -50%) rotate(2deg);
+    opacity: 1;
+  }
+
+  45% {
+    transform: translate(calc(100vw + 90px), -50%) rotate(2deg);
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  55% {
+    transform: translate(-90px, -50%) rotate(2deg);
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(calc(100vw + 90px), -50%) rotate(2deg);
+  }
+}
+
+
+
+/* ======================
+   TEXTO
+====================== */
+.uberflash-modal h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.uberflash-desc {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.uberflash-steps {
+  display: grid;
+  gap: 12px;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.uberflash-warning {
+  padding: 12px;
+  border-radius: 12px;
+ 
+  margin-bottom: 20px;
+}
+
+.uberflash-warning img {
+  width: 30px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* ======================
+   BOTÃO FINAL
+====================== */
+.uberflash-confirm {
+  display: block;
+  text-align: center;
+
+  background: #000;
+  color: #fff;
+
+  padding: 16px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: transform 0.2s ease;
+}
+
+.uberflash-confirm:hover {
+  transform: scale(1.04);
+}
+
+/* ======================
+   DESKTOP
+====================== */
+@media (min-width: 768px) {
+  .uberflash-overlay {
+    align-items: center;
+  }
+
+  .uberflash-modal {
+    border-radius: 26px;
+  }
+}

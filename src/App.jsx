@@ -1,9 +1,9 @@
-import HeroSection from './components/sections/HeroSection';  
-import WhatsAppButton from './components/ui/WhatsappButton';
-import InfoBar from './components/layout/InfoBar';
-import ProductSection from './components/sections/ProductSection';
-import HorarioSection from './components/sections/HorarioSection';
-import LocationSection from './components/sections/LocationSection';
+import HeroSection from './components/sections/HeroSection/HeroSection';  
+import WhatsAppButton from './components/ui/WhatsappButton/WhatsappButton';
+import InfoBar from './components/layout/InfoBar/InfoBar';
+import ProductSection from './components/sections/ProductSection/ProductSection';
+import HorarioSection from './components/sections/HorarioSection/HorarioSection';
+import LocationSection from './components/sections/LocationSection/LocationSection';
 
 function App() {
   return (

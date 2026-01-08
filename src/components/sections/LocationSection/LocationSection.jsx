@@ -1,11 +1,11 @@
 import './LocationSection.css'
-import OpenMapsButton from '../ui/OpenMapsButton'
-import PhoneIcon from '../../icons/telefoneamarelo.png'
-import StoreIcon from '../../icons/casa.png'
-import SectionHeader from '../layout/SectionHeader'
-import LocalIcon from '../../icons/localamarelo.png'
+import OpenMapsButton from '../../ui/OpenMapsButton/OpenMapsButton'
+import PhoneIcon from '../../../icons/telefoneamarelo.png'
+import StoreIcon from '../../../icons/casa.png'
+import SectionHeader from '../../layout/SectionHeader/SectionHeader'
+import LocalIcon from '../../../icons/localamarelo.png'
 
-import UberFlashSlider from '../layout/UberFlashSlider';
+import UberFlashButton from '../../layout/UberFlash/UberFlashButton';
 
 
 export default function LocationSection() {
@@ -46,7 +46,7 @@ export default function LocationSection() {
             <img src={StoreIcon} alt="" />
             <strong>Retire seu pedido no local</strong>
           </div>
-          <UberFlashSlider />
+          <UberFlashButton />
           
         </div>
       </div>

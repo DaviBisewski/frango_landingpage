@@ -1,5 +1,5 @@
 import "./RedzapButton.css";
-import iconzap from "../../icons/whatsapp.png";
+import iconzap from "../../../icons/whatsapp.png";
 
 export default function RedzapButton({text}) {
   const phoneNumber = "5547984828184";

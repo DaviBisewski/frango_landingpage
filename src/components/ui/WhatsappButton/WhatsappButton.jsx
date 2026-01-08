@@ -1,4 +1,4 @@
-import zapVerde from "../../images/zapverde.png";
+import zapVerde from "../../../images/zapverde.png";
 import "./WhatsappButton.css";
 
 export default function WhatsAppButton() {
