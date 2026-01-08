@@ -134,7 +134,9 @@
   .hero {
     padding: 30px 16px;
   }
-
+  .hero-badge img{
+    width: 110px;
+  }
   .hero-container {
     flex-direction: column;
     max-width: 420px;
