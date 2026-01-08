@@ -1,5 +1,5 @@
 .horario-section {
-  padding: 120px 16px;
+  padding: 50px 16px;
 }
 
 .horario-container {
@@ -64,7 +64,7 @@
 
 @media (max-width: 768px) {
   .horario-section {
-    padding: 80px 16px;
+    padding: 0px 16px;
   }
 
   .horario-container {
@@ -73,7 +73,7 @@
 
   .horario-header {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     gap: 16px;
   }

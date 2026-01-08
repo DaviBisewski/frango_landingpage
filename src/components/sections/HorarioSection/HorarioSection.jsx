@@ -13,7 +13,7 @@ export default function HorarioSection() {
         <div className="horario-header">
           <SectionHeader
             icon={clockIcon}
-            title="Horário de funcionamento"
+            title="Nosso Horário de Funcionamento"
           />
           <StatusFuncionamento />
         </div>

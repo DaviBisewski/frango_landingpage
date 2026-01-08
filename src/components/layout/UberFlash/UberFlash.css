@@ -265,4 +265,12 @@
   .uberflash-steps {
     font-size: 15px;
   }
+
+  .uberflash-btn-icon{
+    width: 35px;
+  }
+
+  .uberflash-btn-text {
+    font-size: 20px;
+  }
 }

@@ -14,9 +14,11 @@ export default function ProductsSection() {
   return (
     <section className="products-section">
       <div className="products-container">
+        <div className="header">
         <SectionHeader icon={iconFrango} title="Nossos produtos">
           <RedzapButton text="Encomende seus favoritos" />
         </SectionHeader>
+        </div>
 
         <div className="products-grid">
           <ProductCard

@@ -16,8 +16,8 @@ export default function HeroSection() {
           </div>
 
           <h1>
-            <strong>Frango assado na hora,</strong>
-            <br />
+            <strong>Frango assado na hora, </strong>
+            
             com e sem recheio
           </h1>
 

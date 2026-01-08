@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  padding: 80px 16px;
+  padding: 50px 16px;
 }
 
 .hero-container {
@@ -122,7 +122,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 64px 16px;
+    padding: 30px 16px;
   }
 
   .hero-container {
@@ -159,6 +159,17 @@
     width: 100%;
     max-width: 340px;
     animation: floatFrangoMobile 4s ease-in-out infinite;
+  }
+
+  .frango-shadow {
+    width: 60%;
+    height: 22px;
+    bottom: 6px;
+
+    filter: blur(10px);
+    opacity: 0.35;
+
+    animation: shadowPulseMobile 4s ease-in-out infinite;
   }
 }
 

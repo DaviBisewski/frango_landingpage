@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  margin-bottom: 56px;
+
 }
 
 .section-title {
@@ -14,7 +14,6 @@
 
 .section-title img {
   width: 56px;
-  height: auto;
 }
 
 .section-title h2 {
@@ -33,10 +32,12 @@
     align-items: center;
     text-align: center;
     gap: 24px;
+    margin-bottom: 20px;
   }
 
   .section-title h2 {
     font-size: 32px;
+    text-align: justify;
   }
 
   .section-title img {

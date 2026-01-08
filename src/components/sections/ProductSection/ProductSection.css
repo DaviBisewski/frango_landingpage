@@ -1,5 +1,9 @@
 .products-section {
-  padding: 120px 16px;
+  padding: 50px 16px;
+}
+
+.header{
+  margin-bottom: 56px;
 }
 
 .products-container {
@@ -37,5 +41,11 @@
   .products-grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .header{
+     align-items:flex-start;
+    text-align: center;
+    gap: 0px;
   }
 }
