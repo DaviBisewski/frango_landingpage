@@ -73,8 +73,8 @@
 -------------------------- */
 @media (max-width: 780px) {
   .location-section {
-    padding: 0px 16px;
-     width: 100%;
+  padding: 0px 16px;
+  width: 100%;
   max-width: 420px;
   margin: 0 auto;
   overflow-x: hidden;
@@ -99,7 +99,6 @@
 
   .map-container iframe {
     height: 320px;
-    width: 315px;
     
   }
 
