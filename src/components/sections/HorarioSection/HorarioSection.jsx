@@ -5,7 +5,7 @@ import CountdownFuncionamento from '../../layout/CountdownFuncionamento/Countdow
 
 import clockIcon from '../../../icons/relogio.png'
 import calendarIcon from '../../../icons/calendar.png'
-import Mascote from '../../../images/Mascote.png'
+import Mascote from '../../../images/galinha.png'
 
 export default function HorarioSection() {
   return (
