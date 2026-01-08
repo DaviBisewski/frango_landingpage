@@ -37,6 +37,7 @@
 
   .section-title{
     align-items: flex-start;
+    
   }
 
   .section-title h2 {
@@ -45,6 +46,8 @@
   }
 
   .section-title img {
-    width: 42px;
+    width: 45px;
+    height: 40px;
+    margin-top: 5px;
   }
 }
