@@ -10,9 +10,10 @@ export default function HeroSection() {
         <div className="hero-content">
           <div className="hero-badge">
             <img src={logo} alt="La Casa Di Frango" />
-            <span>
-              <strong>30+</strong> anos de tradição
-            </span>
+            <div className="hero-tradicao">
+             <span className="hero-badge-number">30+</span>
+            <span className="hero-badge-text">anos de tradição</span>
+            </div>
           </div>
 
           <h1>

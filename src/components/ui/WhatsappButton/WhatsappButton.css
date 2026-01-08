@@ -48,14 +48,14 @@
 
         @media (max-width: 768px) {
           .whatsapp-fab {
-            width: 56px;
-            height: 56px;
-            right: 16px;
-            bottom: 16px;
+            width: 70px;
+            height: 70px;
+            right:15px;
+            bottom: 30px;
           }
 
           .whatsapp-fab img {
-            width: 28px;
-            height: 28px;
+            width: 40px;
+            height: 40px;
           }
         }

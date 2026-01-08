@@ -24,10 +24,39 @@
   gap: 40px;
 }
 
-.hero-badge {
+.hero-badge{
+
   display: flex;
+  flex-direction: flex-start;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
+}
+.hero-tradicao {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px 20px;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+
+  
+}
+
+
+.hero-badge-number {
+  font-size: 28px;
+  font-family: var(--font-tittle);
+  font-weight: 700;
+  color: #fbbf24; /* dourado */
+}
+
+.hero-badge-text {
+  font-size: 18px;
+  font-family: var(--font-tittle);
+  color: #fff;
 }
 
 .hero-badge img {
@@ -35,26 +64,7 @@
   height: auto;
 }
 
-.hero-badge span {
-  font-size: 28px;
-  font-family: var(--font-tittle);
-  color: #fff;
-}
 
-.hero-badge strong {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 60px;
-  height: 60px;
-  margin-right: 6px;
-
-  border-radius: 50%;
-  background: #fff;
-  color: #e30613;
-  font-weight: 700;
-}
 
 .hero-content h1 {
   font-size: 50px;
@@ -136,14 +146,16 @@
     gap: 40px;
   }
 
-  .hero-badge span {
+    .hero-tradicao {
+    padding: 8px 14px;
+  }
+
+  .hero-badge-number {
     font-size: 22px;
   }
 
-  .hero-badge strong {
-    width: 46px;
-    height: 46px;
-    font-size: 18px;
+  .hero-badge-text {
+    font-size: 16px;
   }
 
   .hero-content h1 {
