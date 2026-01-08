@@ -180,6 +180,7 @@
   text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
+  color: #f6a313;
 }
 
 .uberflash-desc {
@@ -190,8 +191,13 @@
 .uberflash-steps {
   display: grid;
   gap: 12px;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 18px;
+}
+
+.uberflash-steps strong{
+  font-weight: 700;
+  color:#f6a313 ;
 }
 
 .uberflash-warning {

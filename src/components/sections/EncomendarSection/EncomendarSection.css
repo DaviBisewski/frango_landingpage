@@ -1,0 +1,48 @@
+.encomendar {
+  padding: 140px 24px;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-tittle);
+}
+
+.encomendar-container {
+  max-width: 1300px;
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.encomendar h2 {
+  font-size: 62px;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0;
+ animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+
+}
+
+.encomendar p {
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 1300px;
+  opacity: 0;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

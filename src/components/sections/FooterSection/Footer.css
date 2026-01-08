@@ -1,0 +1,92 @@
+.footer {
+  width: 100%;
+  font-family: var(--font-tittle);
+}
+
+/* ======================
+   TOP
+====================== */
+
+.footer-top {
+  background: #ff0000;
+  padding: 28px 16px;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+
+  text-align: center;
+  color: #fff;
+}
+
+.footer-address {
+  font-size: 16px;
+}
+
+/* Linha inferior do topo */
+.footer-info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.footer-phone img {
+  width: 18px;
+  height: 18px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.footer-social img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.15);
+}
+
+/* ======================
+   BOTTOM
+====================== */
+
+.footer-bottom {
+  background: #c10000;
+  padding: 12px 16px;
+}
+
+.footer-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: #ffd700;
+  font-size: 14px;
+}
+
+.footer-credit img {
+  width: 18px;
+  height: 18px;
+}
