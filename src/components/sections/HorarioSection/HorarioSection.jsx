@@ -23,13 +23,13 @@ export default function HorarioSection() {
           <CountdownFuncionamento />
 
           <div className="horario-main">
-            {/* esquerda */}
+            
             <div className="horario-col">
               <img src={calendarIcon} alt="" aria-hidden />
               <h3>Quarta a domingo e feriados</h3>
             </div>
 
-            {/* mascote */}
+            
             <img
               src={Mascote}
               alt=""

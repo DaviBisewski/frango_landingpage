@@ -4,7 +4,6 @@ import portavermeio from '../../../icons/portavermeio.png'
 
 // Lista básica de feriados nacionais fixos (pode expandir depois)
 const feriadosFixos = [
-  '01-01', // Ano Novo
   '04-21', // Tiradentes
   '05-01', // Dia do Trabalhador
   '09-07', // Independência

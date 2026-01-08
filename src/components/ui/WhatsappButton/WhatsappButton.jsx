@@ -2,7 +2,7 @@ import zapVerde from "../../../images/zapverde.png";
 import "./WhatsappButton.css";
 
 export default function WhatsAppButton() {
-  const phoneNumber = "5547984828184";
+  const phoneNumber = "5547999942292";
 
   const message =
     "Olá! Gostaria de fazer um pedido.";
