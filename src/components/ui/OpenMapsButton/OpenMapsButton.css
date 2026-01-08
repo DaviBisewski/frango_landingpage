@@ -33,4 +33,9 @@
     font-size: 18px;
     padding: 12px 22px;
   }
+
+   .open-maps-button img{
+    width: 22px;
+    height: 30px;
+   }
 }

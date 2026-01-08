@@ -270,7 +270,9 @@
   .uberflash-btn-icon{
     width: 35px;
   }
-
+  .uberflash-btn{
+    max-width: 320px;
+  }
   .uberflash-btn-text {
     font-size: 20px;
   }

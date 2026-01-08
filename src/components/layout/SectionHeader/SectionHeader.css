@@ -33,6 +33,7 @@
     text-align: center;
     gap: 24px;
     margin-bottom: 20px;
+    
   }
 
   .section-title{
@@ -48,6 +49,16 @@
   .section-title img {
     width: 45px;
     height: 40px;
-    margin-top: 5px;
+    object-fit: contain;
   }
+}
+
+@media (max-width: 430px) {
+  .section-title h2 {
+    font-size: 25px;
+  }
+
+
+
+
 }
